@@ -17,11 +17,6 @@ SUM:
 
 END:			B END			//exit condition
 
-
-
-
-
-
 START:	.word 0
 SIZE:	.word 8
 LIST:	.word 0, 1, 2, 3, 4, 5, 6, 7
