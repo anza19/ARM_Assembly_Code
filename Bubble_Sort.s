@@ -41,6 +41,6 @@ CHECK:				LDR R6, =FIRST		//Load first address to check if sorting executed corr
 
 END:				B END			//END
 	
-FIRST:			.word 0
-N:			.word 8
-NUMBER:			.word 8, 7, 6, 5, 4, 3, 2, 1
+FIRST:				.word 0
+N:				.word 8
+NUMBER:				.word 8, 7, 6, 5, 4, 3, 2, 1
