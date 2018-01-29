@@ -31,7 +31,7 @@ BUBBLE_SORT:
 
 SWAP:			
 				STR R3, [R4]		//Store R3 into R2's address
-				STR R2, [R4, #4]	//Store R2 into R2's address
+				STR R2, [R4, #4]	//Store R2 into R3's address
 				ADD R4, R4, #4		//Increment pointer to point to next address
 				B BUBBLE_SORT
 
