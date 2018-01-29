@@ -33,7 +33,7 @@ CENTER:
 
 DONE:			
 				LDR R11, =RESULT	//R11 has the address of the first list
-				LDR R12,[R11, #8]	//R12 has value of first centered value, if done correctly, it should be 1
+				LDR R12, [R11, #8]	//R12 has value of first centered value, if done correctly, it should be 1
 
 END:				B END			
 
