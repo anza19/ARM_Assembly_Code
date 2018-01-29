@@ -15,7 +15,7 @@ SUM:
 			ADD R2, R2, #4		//update pointer to next address
 			B SUM			//go back
 
-END:		B END				//exit condition
+END:			B END				//exit condition
 
 
 
