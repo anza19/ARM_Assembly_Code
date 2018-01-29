@@ -8,16 +8,16 @@ _start:
 				MOV R3, #0		//R3 is our sum variable
 
 SUM:			
-				LDR	R4, [R2]	//first element is loadecd into R4
+				LDR R4, [R2]	//first element is loadecd into R4
 				ADD R3, R3, R4		//add contents into sum variable
 				SUBS R1, R1, #1		//reduce counter
 				BEQ AVERAGE		//sum loop is done if R1 == 0
-				ADD	R2, R2, #4	//pointer variable is incremented to pointer to next address
-				BNE	SUM		//go back to sum
+				ADD R2, R2, #4	//pointer variable is incremented to pointer to next address
+				BNE SUM		//go back to sum
 
 AVERAGE:		
 				MOV R5, R3		//R3 has a copy of the sum
-				LSR	R5, R5, #3	//divide the number of entries and store in R5 to get average
+				LSR R5, R5, #3	//divide the number of entries and store in R5 to get average
 				LDR R6, =RESULT 	//R6 has the address of the size
 				LDR R7, [R6, #8]	//R7 has the size
 				ADD R8, R6, #8		//R8 acts as a pointer the fist element in the list
