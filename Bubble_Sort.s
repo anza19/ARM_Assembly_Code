@@ -20,7 +20,7 @@ WHILE_LOOP:
 
 BUBBLE_SORT:
 				CMP R5, R1		//R5 as stated previously has a dual role, here it acts as a counter
-				BEQ WHILE_LOOP	//If 0, we go back to the while loop
+				BEQ WHILE_LOOP	        //If 0, we go back to the while loop
 				ADD R5, R5, #1		//Increment our counter
 				LDR R2, [R4]		//We load the contents of current address into R2
 				LDR R3, [R4, #4]	//We load the contents of the next address into R3
